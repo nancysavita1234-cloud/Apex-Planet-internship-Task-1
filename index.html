@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 1</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+          /* header */
+        header {
+            font-size: 30px;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            letter-spacing: 1px;
+            padding: 15px;
+            background-color: purple;
+        }
+        /* picture */
+         .picture{
+            margin: 50px auto;       
+            width: 70%;       
+            border: 2px solid #000;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+            border-radius: 10px;
+            overflow: hidden;         
+        }
+
+        .picture img{
+              display: block;           
+              width: 100%;              
+              margin: auto;             
+              transition: transform 0.3s;  
+              height: auto;             
+            }
+
+        .picture img:hover{
+              transform: scale(1.1);   
+        }
+           
+        /* heading */
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 35px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+        /* paragraph */
+        p {
+            font-size: 17px;
+            letter-spacing: 1px;
+            font-family: 'Arial', sans-serif;
+        }
+   /* container and content */
+        .container {
+            padding: 40px;
+            background-color: #f0f0f5;
+            border-radius: 20px;
+            margin: 20px;
+        }
+
+        .content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .text {
+            flex: 1;
+            text-align: left;
+        }
+    /* images */
+
+        .images {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .images img {
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .images img {
+                width: 80%;
+                margin-top: 0;
+            }
+        }
+        @media (max-width: 768px) {
+        .picture {
+        width: 90%;
+        }
+         }
+        /* image hover */
+
+        .images img:hover {
+            transform: scale(1.05);
+        }
+        /* button */
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: linear-gradient(to right, #00b09b, #96c93d);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        /* button hover*/
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+       /* link */
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            color: white;
+            background-color: #6a0dad;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+        /* link hover */
+        a:hover {
+            background-color: #4b0082;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🏢 ApexPlanet Software Pvt. Ltd.</h1>
+    </header>
+
+    <div class="picture">
+        <img src="images/image2.jpg">
+    </div>
+
+    <div class="container">
+        <div class="content">
+
+            <div class="text">
+                <section class="about">
+                <h2>🏢 About ApexPlanet Software Pvt. Ltd</h2>
+                <p>
+                    ApexPlanet Software Pvt. Ltd. ek innovative IT company hai jo modern digital solutions provide karti hai. 
+                    Company ka main focus businesses ko technology ke through grow karne me help karna hai. 
+                    Yeh web development aur app development services me specialize karti hai, jahan user-friendly aur scalable 
+                    applications develop kiye jate hain. Company latest technologies aur industry best practices ka use karti hai 
+                    taaki har project efficient aur future-ready ho.
+                </p>
+            </section>
+            <section class="mission">
+                <h2>💡 Our Mission</h2>
+                <p>
+                    Hamari mission high-quality software solutions deliver karna hai jo clients ki specific needs ko pura kare. 
+                    ApexPlanet Software Pvt. Ltd. ka aim hai innovative ideas ko real-world applications me convert karna 
+                    aur businesses ko digital success tak pahunchana.
+                </p>
+            </section>
+            <section class="vision">
+                <h2>🚀 Our Vision</h2>
+                <p>
+                    Company ka vision hai digital world me ek strong position banana aur naye standards set karna. 
+                    Yeh organization creativity, innovation aur continuous learning par believe karti hai.
+                </p>
+            </section>
+                <!-- Link and button ---->
+                <a href="https://www.apexplanet.in" target="_blank">Visit ApexPlanet</a>
+                <button onclick="showMessage()">Click Me</button>
+            </div>
+
+            <!-- Image -->
+            <div class="images">
+                <img src="images/web-design.png" alt="Sample Image">
+                <img src="images/web-design1.png" alt="Samplesecond Image">
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // JavaScript Function
+        function showMessage() {
+            alert("Hello, you clicked the button ");
+        }
+    </script>
+    
+
+</body>
+</html>
